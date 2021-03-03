@@ -119,7 +119,7 @@ export default class CardModal extends React.Component{
         let slug = this.state.slug;
         let uname =this.getCookie('username');
         let db = openDatabase('mydb', '1.0', 'Test DB', 2 * 1024 * 1024);
-       // DB.createDatabase();
+        DB.createDatabase();
         if(isLoggedIn){
             // Get user id
             db.transaction((tx) => {   
